@@ -29,7 +29,7 @@ public class TimeClientImpl implements TimeClient {
             }
             return timeModel;
         } catch (IOException e) {
-            throw new IllegalStateException("Something went wrong when sending sms. Details: " + e.getMessage());
+            throw new IllegalStateException("Something went wrong when calling service. Details: " + e.getMessage());
         }
     }
 }
