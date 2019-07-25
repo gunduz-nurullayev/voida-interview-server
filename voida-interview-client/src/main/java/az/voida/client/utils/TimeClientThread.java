@@ -20,7 +20,7 @@ public class TimeClientThread extends Thread {
 
     @Override
     public void run() {
-        for(int i = 0; i < requestCount; i++) {
+        for (int i = 0; i < requestCount; i++) {
             TimeModel time = timeClient.getTime(Thread.currentThread().getName());
             LocalDateTime localDateTime = LocalDateTime.now();
             log.info(getName() + " " + time + " " + localDateTime);
